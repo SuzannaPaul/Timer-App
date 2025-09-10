@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/font.css" />
+  </head>
+  <body>
+    <!---------------------------- Main ------------------------------->
+    <section class="main">
+      <div class="main__mode">
+        <div>
+          <svg class="icon">
+            <use
+              xlink:href="../assets/images/sprite.svg#focus"
+              class="main__mode__icon"
+            ></use>
+          </svg>
+        </div>
+        <h2 class="main__mode__text">Focus</h2>
+      </div>
+      <div class="main__timer">
+        <p class="main__timer__min">00</p>
+        <p class="main__timer__sec">00</p>
+      </div>
+      <div class="main__controls">
+        <div class="main__controls__setting">
+          <svg class="icon">
+            <use xlink:href="../assets/images/sprite.svg#threeDot"></use>
+          </svg>
+        </div>
+        <div class="main__controls__start">
+          <svg class="icon">
+            <use
+              xlink:href="../assets/images/sprite.svg#start"
+              class="main__controls__start__icon"
+            ></use>
+          </svg>
+        </div>
+        <div class="main__controls__next">
+          <svg class="icon">
+            <use xlink:href="../assets/images/sprite.svg#next"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------- Setting Modal --------------------------->
+    <section class="setting --hidden-setting">
+      <div class="setting__header">
+        <p>Setting</p>
+        <svg class="icon closeSettingIcon">
+          <use xlink:href="../assets/images/sprite.svg#cancel"></use>
+        </svg>
+      </div>
+
+      <div class="setting__darkMode">
+        <p>Dark Mode</p>
+        <div class="setting__darkMode__Toggle">
+          <div class="setting__darkMode__Toggle__inner"></div>
+        </div>
+      </div>
+
+      <div class="setting__Focus__length setting__fileds">
+        <form>
+          <p>Focus Length</p>
+          <input type="number" class="input__focus" />
+        </form>
+      </div>
+
+      <div class="setting__untilLongBreaks setting__fileds">
+        <form>
+          <p>Pomodoros until long break</p>
+          <input type="number" class="input__focusSessions" />
+        </form>
+      </div>
+
+      <div class="setting__shortBreakLength setting__fileds">
+        <form>
+          <p>Short break length</p>
+          <input type="number" class="input__shortBreak" />
+        </form>
+      </div>
+
+      <div class="setting__LongBreakLength setting__fileds">
+        <form>
+          <p>Long break length</p>
+          <input type="number" class="input__longBreak" />
+        </form>
+      </div>
+
+      <div class="setting__Statistics setting__fileds">
+        <div class="setting__Statistics__icon">
+          <svg class="icon">
+            <use xlink:href="../assets/images/sprite.svg#static"></use>
+          </svg>
+          <p>Statistics</p>
+        </div>
+        <button class="setting__Statistics__button">Submit</button>
+      </div>
+    </section>
+
+    <div class="setting-background --hidden-setting"></div>
+    <!---------------------  Statistics Modal ------------------------->
+    <section class="statistics-modal --hidden-statistics">
+      <div class="statistics-modal__header">
+        <h1>Statistics</h1>
+        <svg class="icon statistics__cancel">
+          <use xlink:href="../assets/images/sprite.svg#cancel"></use>
+        </svg>
+      </div>
+      <div class="statistics">
+        <div class="statistics__charts">
+          <div class="statistics__monday">
+            <div class="statistics__monday__bar"></div>
+          </div>
+          <p>M</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__tuesday">
+            <div class="statistics__tuesday__bar"></div>
+          </div>
+          <p>T</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__wednesday">
+            <div class="statistics__wednesday__bar"></div>
+          </div>
+          <p>W</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__thursday">
+            <div class="statistics__thursday__bar"></div>
+          </div>
+          <p>T</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__friday">
+            <div class="statistics__friday__bar"></div>
+          </div>
+          <p>F</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__saturday">
+            <div class="statistics__saturday__bar"></div>
+          </div>
+          <p>S</p>
+        </div>
+
+        <div class="statistics__charts">
+          <div class="statistics__sunday">
+            <div class="statistics__sunday__bar"></div>
+          </div>
+          <p>S</p>
+        </div>
+      </div>
+      
+      <div class="statistics-modal__info">
+        <h2 class="statistics-modal__info__total">Total:</h2>
+        <h2 class="statistics-modal__info__perDay">
+          Daily Average Focus Time:
+        </h2>
+      </div>
+    </section>
+
+    <div class="statistics-background --hidden-statistics"></div>
+
+    <!--------------------------- Audios ------------------------------->
+    <audio
+      src="../assets/sounds/soft.wav"
+      class="click-sound"
+      preload="auto"
+    ></audio>
+    <audio
+      src="../assets/sounds/endring.mp3"
+      class="end-sound"
+      preload="auto"
+    ></audio>
+    <script type="module" src="../src/js/app.js"></script>
+  </body>
+</html>
