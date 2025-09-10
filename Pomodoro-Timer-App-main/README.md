@@ -25,11 +25,11 @@ The design of this app is inspired by a Pomodoro Timer UI kit on Figma. You can 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/arianimmen/Pomodoro-Timer-App.git
+   git clone https://github.com/SuzannaPaul/Timer-App.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Pomodoro-Timer-App
+   cd Timer-App
    ```
 3. Open `public/index.html` in your browser to start the app.
 
