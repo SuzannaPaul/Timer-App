@@ -2,9 +2,6 @@
 
 This is a **Pomodoro focus app** designed to improve productivity with a customizable timer. The app includes focus, short break, and long break modes, along with the ability to review your weekly focus stats. The project is built using HTML, CSS, and JavaScript.
 
-## Live Demo
-
-Check out the live version [here](https://arianimmen.github.io/Pomodoro-Timer-App/public/index.html).
 
 ## Features
 
@@ -36,6 +33,3 @@ The design of this app is inspired by a Pomodoro Timer UI kit on Figma. You can 
    ```
 3. Open `public/index.html` in your browser to start the app.
 
-## Contributions
-
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
